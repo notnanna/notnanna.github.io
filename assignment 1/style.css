@@ -1,0 +1,47 @@
+body {
+  background-image: linear-gradient(
+    to left top,
+    #e4ecf6,
+    #dde4fc,
+    #e1dafe,
+    #eecdf9,
+    #ffbeeb
+  );
+}
+h1 {
+}
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+h2 strong {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul li {
+  font-family: "Puritan", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-family: "Puritan", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  font-family: "Puritan", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
