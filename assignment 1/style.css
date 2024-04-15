@@ -64,7 +64,10 @@ ul li {
 .container {
   display: flex;
   column-gap: 30px;
-  border-style: dashed;
+  border-style: dotted;
+  margin-top: 10px;
+  border-width: 2.5px;
+  border-color: rgb(103, 96, 158);
 }
 #div1 {
   background-color: rgb(215, 192, 228);
