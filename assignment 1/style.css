@@ -7,6 +7,7 @@ body {
     #eecdf9,
     #ffbeeb
   );
+  margin: auto;
 }
 h1 {
 }
@@ -59,4 +60,29 @@ ul li {
   font-family: "Puritan", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+.container {
+  display: flex;
+  column-gap: 30px;
+  border-style: dashed;
+}
+#div1 {
+  background-color: rgb(215, 192, 228);
+  width: 650px;
+  float: left;
+  height: 1900px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+#div2 {
+  background-color: rgb(215, 192, 228);
+  width: 650px;
+  float: right;
+  height: 850px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.href {
+  text-align: center;
 }
