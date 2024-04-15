@@ -73,7 +73,7 @@ ul li {
   background-color: rgb(215, 192, 228);
   width: 650px;
   float: left;
-  height: 1900px;
+  height: 2000px;
   margin-left: 10px;
   margin-bottom: 15px;
   margin-top: 15px;
@@ -82,10 +82,7 @@ ul li {
   background-color: rgb(215, 192, 228);
   width: 650px;
   float: right;
-  height: 850px;
+  height: 1080px;
   margin-right: 10px;
   margin-top: 15px;
-}
-.href {
-  text-align: center;
 }
