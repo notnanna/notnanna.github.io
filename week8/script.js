@@ -22,9 +22,9 @@ function toggleVideo() {
 }
 
 // This function will muste/unmute the video on click
-const muteUnmuteButton = document.querySelector("#mute-unmute-img");
+const muteUnmuteButton = document.querySelector("#mute-unmute-button");
 console.log(muteUnmuteButton);
-
+myVideo.addEventListener("click", toggleSound);
 muteUnmuteButton.addEventListener("click", toggleSound);
 
 function toggleSound() {
@@ -47,4 +47,37 @@ function updateProgressBar() {
   const progress = (myVideo.currentTime / myVideo.duration) * 100;
   console.log(progress);
   progressBar.style.width = progress + "%";
+}
+
+// This function will make the video fullscreen when double clicked
+const fullscreenButton = document.querySelector("#fullscreen-button");
+myVideo.addEventListener("dblclick", goFullScreen);
+
+fullscreenButton.addEventListener("click", goFullScreen);
+
+function goFullScreen() {
+  if (!document.fullscreenElement) {
+    myVideo.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
+
+// This function will add timestamps for easy navigation
+const step1Button = document.querySelector("#step-1-button");
+console.log(step1Button);
+step1Button.addEventListener("click", gotoStep1);
+
+function gotoStep1() {
+  myVideo.currentTime = 16.0;
+  // *adjust the timestamp accordingly*
+}
+
+const step2Button = document.querySelector("#step-2-button");
+console.log(step2Button);
+step2Button.addEventListener("click", gotoStep2);
+
+function gotoStep2() {
+  myVideo.currentTime = 20.0;
+  // *adjust the timestamp accordingly*
 }
