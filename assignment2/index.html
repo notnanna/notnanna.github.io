@@ -1,10 +1,21 @@
+<!-- For this assignment I have chosen the context of..: Here are my rationale for
+semantics: I went with... 
+1) section: blah, blah blah 
+2) section: blah, blah blah
+3) section: blah, blah blah -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- add the font family of your choice -->
+    <title>Media Player Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -24,48 +35,64 @@
         <!-- Add or remove navigation items as needed -->
       </ul>
     </nav>
-
-    <!-- Main Content Section -->
-    <main class="container">
-      <!-- Media Player Section -->
-      <div class="media-player">
-        <video id="custom-video-player" controls width="1000">
-          <source
-            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4"
-            type="video/mp4"
+    <div class="outer">
+      <section class="video-container">
+        <video src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" id="my-video" width="800"></video>
+      </section>
+      <section class="video-controls">
+        <button id="play-pause-button">
+          <img
+            id="play-pause-img"
+            src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+            alt="Play Button"
+            width="24"
+            height="24"
           />
-        </video>
-        <div class="custom-controls">
-          <button id="play-pause-btn" onclick="togglePlayPause()">
-            <img
-              id="play-pause-img"
-              src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
-              alt="Play Button"
-              width="24"
-              height="24"
-            />
-          </button>
-          <!-- add the missing buttons or functionality here -->
-          <div class="progress-bar">
-            <span id="progress-bar-fill"></span>
-          </div>
+        </button>
+        <button id="mute-unmute-button">
+          <img
+            id="mute-unmute-img"
+            src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+            alt="muta Unmute Button"
+            width="24"
+            height="24"
+          />
+        </button>
+        <button id="fullscreen-button">
+          <img
+            id="fullscreen-img"
+            src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
+            alt="Fullscreen Button"
+            width="24"
+            height="24"
+          />
+        </button>
+        <div class="progress-bar">
+          <span id="progress-bar-fill"></span>
         </div>
-      </div>
-
-      <!-- Additional Content Section -->
-      <section>
+      </section>
+      <section class="timeline">
+        <button id="step-1-button">Step 1</button>
+        <button id="step-2-button">Step 2</button>
+      </section>
+    </div>
+    <!-- Additional Content Section -->
+    <section>
         <h2>Additional Content</h2>
         <p>This is where you can showcase any other relevant content.</p>
         <!-- Add more content as needed -->
       </section>
     </main>
-
-    <!-- Footer Section -->
     <footer>
-      <p>&copy; 2024 Media Player Website. All rights reserved.</p>
-      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+      <!-- *can add in references to icons and anything else (copy from inspection on
+      canvas) -->
+      <a href="https://icons8.com/icon/61001/mute">Mute</a> icon by
       <a href="https://icons8.com">Icons8</a>
-      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+      <a href="https://icons8.com/icon/69155/full-screen">Fullscreen</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/TlSnjmNzYgKT/play">Play</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/pSwquXkxwLD8/pause">Pause</a> icon by
       <a href="https://icons8.com">Icons8</a>
     </footer>
   </body>
