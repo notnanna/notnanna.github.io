@@ -64,13 +64,35 @@ function goFullScreen() {
 }
 
 // This function will add timestamps for easy navigation
+
+let vid = document.getElementById("myVideo");
+
+function setCurTime() {
+  myVideo.currentTime = 0;
+}
+
+// const introButton = document.querySelector("#intro-button");
+// console.log(introButton);
+// introButton.addEventListener("click", gotoIntroButton);
+// function gotoStep1() {
+// //   myVideo.currentTime = 28;
+// // }
+// ^^ failed version of me trying to create a button for the IntersectionObserver. Intead I followed a tutorial from firefox, that way I could still apply the timestamp function.
+
+const materialsButton = document.querySelector("#materials-button");
+console.log(materialsButton);
+materialsButton.addEventListener("click", gotoMaterials);
+
+function gotoMaterials() {
+  myVideo.currentTime = 14;
+}
+
 const step1Button = document.querySelector("#step-1-button");
 console.log(step1Button);
 step1Button.addEventListener("click", gotoStep1);
 
 function gotoStep1() {
-  myVideo.currentTime = 16.0;
-  // *adjust the timestamp accordingly*
+  myVideo.currentTime = 28;
 }
 
 const step2Button = document.querySelector("#step-2-button");
@@ -78,6 +100,61 @@ console.log(step2Button);
 step2Button.addEventListener("click", gotoStep2);
 
 function gotoStep2() {
-  myVideo.currentTime = 20.0;
-  // *adjust the timestamp accordingly*
+  myVideo.currentTime = 41;
+}
+
+const step3Button = document.querySelector("#step-3-button");
+console.log(step3Button);
+step3Button.addEventListener("click", gotoStep3);
+
+function gotoStep3() {
+  myVideo.currentTime = 51;
+}
+
+const step4Button = document.querySelector("#step-4-button");
+console.log(step4Button);
+step4Button.addEventListener("click", gotoStep4);
+
+function gotoStep4() {
+  myVideo.currentTime = 72;
+}
+
+const step5Button = document.querySelector("#step-5-button");
+console.log(step5Button);
+step5Button.addEventListener("click", gotoStep5);
+
+function gotoStep5() {
+  myVideo.currentTime = 94;
+}
+
+const step6Button = document.querySelector("#step-6-button");
+console.log(step6Button);
+step6Button.addEventListener("click", gotoStep6);
+
+function gotoStep6() {
+  myVideo.currentTime = 126;
+}
+
+const step7Button = document.querySelector("#step-7-button");
+console.log(step7Button);
+step7Button.addEventListener("click", gotoStep7);
+
+function gotoStep7() {
+  myVideo.currentTime = 155;
+}
+
+const step8Button = document.querySelector("#step-8-button");
+console.log(step8Button);
+step8Button.addEventListener("click", gotoStep8);
+
+function gotoStep8() {
+  myVideo.currentTime = 205;
+}
+
+const finalProductButton = document.querySelector("#final-product-button");
+console.log(finalProductButton);
+finalProductButton.addEventListener("click", gotofinalProduct);
+
+function gotofinalProduct() {
+  myVideo.currentTime = 233;
 }
