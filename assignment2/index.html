@@ -15,6 +15,20 @@ semantics: I went with...
     <link
       href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Space+Grotesk&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Patua+One&display=swap"
+      rel="stylesheet"
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
@@ -22,19 +36,22 @@ semantics: I went with...
   </head>
   <body>
     <!-- Header Section -->
-    <header>
-      <h1>Cooking tutorial</h1>
+    <header class="header1">
+      <h1>Arts & Crafts</h1>
     </header>
 
     <!-- Navigation Section -->
-    <nav>
+    <nav class="navbar">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Playlists</a></li>
+        <li><a href="../assignment1/index.html">A1</a></li>
+        <li><a href="../assignment3/index.html">A3</a></li>
         <!-- Add or remove navigation items as needed -->
       </ul>
     </nav>
+    </div>
+    <br>
+    <h2>How to make a windmill fan</h2>
+    <br>
     <div class="outer">
       <section class="video-container">
         <video src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" id="my-video" width="800"></video>
@@ -71,6 +88,11 @@ semantics: I went with...
           <span id="progress-bar-fill"></span>
         </div>
       </section>
+      <!-- <section class="video-title">
+       in this section, we display the name of the video and current playtime 
+        <span id="curtimetext"> </span> / <span id="durtimetext"> </span>
+        this all is a part of me failing the playtime so I left it 
+      </section> -->
       <section class="timeline">
         <button onclick="setCurTime()" type="button">Intro</button>
         <button id="materials-button">Materials</button>
@@ -87,10 +109,55 @@ semantics: I went with...
     </div>
     <!-- Additional Content Section -->
     <section>
-        <h2>Additional Content</h2>
-        <p>This is where you can showcase any other relevant content.</p>
-        <!-- Add more content as needed -->
-      </section>
+      <br>
+      <h3>Materials:</h3>
+<br>
+<ul id="materials">
+  <!-- I found that giving an id to both lists allowed me to be specific in my style sheet, that way I wont have to go through and give them a different div (e.g.: div1 & div2) This also allows me to give each section their respective characteristics if I feel like it -->
+  <li>Foam sheets</li>
+  <li>A pair of scissors</li>
+  <li>Glue stick</li>
+  <li>Ruler</li>
+  <li>A pen</li>
+  <li>Paper straws</li>
+  <li>Pipe cleaners</li>
+</ul>
+<br>
+        <h3 id="titles">Steps:</h3>
+        <br>
+        <ul id="steps">
+          <li>1. Cut up your sheet of foam into 12.5cm square</li>
+          <br>
+            <li>2. Fold square diagonally in half (make a triangle). Unfold it, turn it arround and fold in the other direction</li>
+            <br>  
+            <li>3. Make a hole in the middle of square, where the creases meet. Cut halfway inwards, from each point<br> and punch in holes are each corner - hole in the middle, hole on every other side</li>
+            <br>    
+            <li>4. Add some glue under each hole. bring one section into the midde (make sure the hole on the corner<br> meets the hole in the middle) and stick it down. Keep folding each section with a hole down into the centre<br> until there are no more holes left</li> 
+            <br>      
+            <li>5. Using the lid of a gluestick and some leftover pieces of foam, mark the foam with and cut out the shape<br> to make a circle. Put a hole in the middle (make two)</li>
+            <br>        
+            <li>6. Wrap pipecleaner around straw, put circle onto the pipecleaner, feed the pipecleaner through the hole in the <br>windmill (from the back , through the front). put the second circle onto the front of the windmil</li>
+            <br>          
+            <li>7. Using a pair of scissors, cut a little bit of the pipecleaner off from the front, and twit the remainer into a little nob in the front</li>
+            <br>            
+            <li>8. Try out the windmill, and try spinning it a few times as the foam may be a bit still, so you will have to <br>tweak it and find out wher it sits comfortably</li> 
+</ul>
+        <!-- <p id='demo' style='display: none'>Hello Javascript</p>     
+<button type='button' onclick="toggleText()">Click me</button> -->
+<!-- ^^ This is another fail attempt, where I am trying to find a way for texts to appear on click when pressing the button. I found that It just didn't work and I wasn't sure why that was the case, but I decided to leave it as I believe I can find an easier way to work around the issue.  -->
+      <!-- ^Also, someof the text here is a bit weird and not relevant to the topic as I was reffering to a template on a scripting website -->
+<br>
+<!-- <h3>Steps:</h3>
+        <br>
+        <p id="eg">
+          <p>1. cut up your sheet of foam into 12.5cm square</p>
+          <br>
+            <p>2. fold square diagonally in half (make a triangle). Unfold it, turn it arround and fold in the other direction</p>
+            <br>
+              <p>3. Make a hole in the middle of square, where the creases meet. Cut halfway inwards, from each point<br> and punch in holes are each corner - hole in the middle, hole on every other side</p>             
+<br> -->
+    <!-- Another failed attempt of me tring to find another way to allign the bullet points to the left of the screen -->
+</section>
     </main>
     <footer>
       <!-- *can add in references to icons and anything else (copy from inspection on

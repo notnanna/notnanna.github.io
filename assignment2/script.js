@@ -1,3 +1,26 @@
+// // in this secion I'm just giving variables so I can work on the current time playing and the overall duration of the video
+// var curtimetext, durtimetext;
+// curtimetext = document.getElementById("curtimetext");
+// durtimetext = document.getElementById("durtimetext");
+
+// vid.addEventListener("timeupdate", seektimeupdate, false);
+
+// function seektimeupdate() {
+//   var nt = vid.currentTime * (100 / vid.duration);
+//   seekslider value = nt;
+//   var curmins = math.floor(vid.currentTime / 60);
+//   var cursecs = math.floor(vid.currentTime - curmins * 60);
+//   var durmins = math.floor(vid.duration / 60);
+//   var dursecs = math.round(vid.duration - durmins * 60);
+//   if(cursecs < 10) {
+//     cursecs = "0" +dursecs;
+//   }
+//   curtimetext.innerHTML = curmins+":"+cursecs;
+//   durtimetext.innerHTML = durmins+":"+dursecs;
+// }
+
+// ^^This is another failed attempt of me trying to get the duration and current play time, but unfortunately it didn't work, so I left it :)
+
 // myVideo contains the video I am working with
 const myVideo = document.querySelector("#my-video");
 console.log(myVideo);
@@ -157,4 +180,30 @@ finalProductButton.addEventListener("click", gotofinalProduct);
 
 function gotofinalProduct() {
   myVideo.currentTime = 233;
+  // toggleText() {
+  //   var text = document.getElementById("final-product-button");
+  //   if (text.style.display === "none") {
+  //     text.style.display = "block";
+  //   } else {
+  //     text.style.display = "none";
+  //   }
+  // ^This is the script version of my fail attempt to have texts appear when pressing the button.
 }
+
+// function toggleText() {
+//   var text = document.getElementById("demo");
+//   if (text.style.display === "none") {
+//     text.style.display = "block";
+//   } else {
+//     text.style.display = "none";
+//   }
+// }
+
+// function toggleText() {
+//   var text = document.getElementById("final-product-button");
+//   if (text.style.display === "none") {
+//     text.style.display = "block";
+//   } else {
+//     text.style.display = "none";
+//   }
+// }

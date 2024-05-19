@@ -1,10 +1,12 @@
 :root {
-  --primary-bg-color: #f4f4f4;
+  --primary-bg-color: #caa2ca;
   --text-color: #333;
   --main-bg-color: #333;
   --main-text-color: #fff;
-  --main-btn-bg-color: #938989;
+  --main-btn-bg-color: #2c8d0f;
 }
+
+/* For the colours of my site and the media player I decided to stick with the same set of colours (the two shades of purple, the green and the black, I decided to do this because I felt that using the colours that were highly and constantly present in the video would be a great way to have the two blend into each other and keep everything consistent! */
 
 body,
 h1,
@@ -16,7 +18,7 @@ ul {
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: var(--primary-bg-color);
+  background-color: #caa2ca;
   color: var(--text-color);
   line-height: 1.6;
   display: flex;
@@ -82,22 +84,22 @@ nav a {
   margin-top: 10px;
   width: 100%;
 }
-
-.custom-controls button {
-  background-color: var(--main-btn-bg-color);
-  color: var(--main-text-color);
+.timeline {
+  color: rgb(109, 11, 109);
+}
+button {
+  background-color: rgb(109, 11, 109);
+  color: rgb(8, 8, 8);
   border: none;
+  border-radius: 2%;
   padding: 8px 12px;
-  cursor: pointer;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
+  font-size: px;
 }
 
 .progress-bar {
-  width: 100%;
+  width: 92%;
   height: 10px;
-  background-color: #ddd;
+  background-color: #868686;
   margin-top: 10px;
   overflow: hidden;
 }
@@ -105,16 +107,114 @@ nav a {
 .progress-bar span {
   display: block;
   height: 100%;
-  background-color: var(--main-bg-color);
+  background-color: rgb(8, 73, 57);
   width: 0;
   transition: width 0.3s ease;
 }
 
 /* Footer styling */
 footer {
-  background-color: var(--main-bg-color);
+  background-color: rgb(109, 11, 109);
   color: var(--main-text-color);
   text-align: center;
   padding: 10px 0;
   width: 100%;
 }
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.navbar {
+  background: rgb(194, 123, 177);
+  padding: 10px 0;
+  width: 100%;
+  align-items: center;
+}
+
+#nav {
+  text-align: center;
+  font-size: large;
+}
+
+.header1 {
+  background-color: rgb(109, 11, 109);
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  /* height: 70px;
+  font-size: large; */
+}
+/* I wasn't able to figure out how to adjust both the header and navigation to have the contents in the centre, but have the dimensions fit according to how I wanted - so I decided to leave it be and prioritise the functionality over appearance */
+/* #div1 {
+  background-color: rgb(215, 192, 228);
+  align-items: center;
+}
+  /* width: 1000px;
+  height: 1000px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+} */
+
+/* ^^ this is my failed attempt at trying to colour the nav bar. I just found that It created a box around the navigation bar, and when I tried to adjust the parameters the text within the navigation bar would also move, which is not what I want :( */
+/* .archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+/* ^^ my first attempt at trying to put in a font and apply it to my site, but because I haven't done the action in so long I kind of forgot how to do it - so this ended up in a massive fail. */
+h3 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+
+ul,
+li {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 2%;
+}
+
+#steps {
+  list-style-type: none;
+  /* padding-right: 30%; */
+  /* list-style-position: inside; */
+}
+
+/* #first {
+  float: left;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#second {
+  float: right;
+  margin-right: 10px;
+  margin-top: 15px;
+} */
+
+/* ^^Here is a failed attempt of me trying to have the steps divided into two and have them on both sides of the screen at the same time, but I realoised that it was a bit too difficult at my level of expertise and that it would overstimulate my audience by having too many texts on the screen */
+
+/* #title-s {
+  padding-left: 2%;
+} */
+/* 
+#eg {
+  text-align: left;
+  padding-right: 50;
+} */
+/* ^^ here I tried to create an example version of the text to try and align the it to the left, but it didn't want to work, I also tried to do the same thing, but add padding and that also did not work :'( */
