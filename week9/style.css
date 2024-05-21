@@ -1,0 +1,166 @@
+/* https://colorhunt.co/palette/1a120b3c2a21d5cea3e5e5cb */
+
+body {
+  background-color: #1a120b;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #e5e5cb;
+  /* color: #3c2a21; */
+  font-size: 1.1rem;
+  gap: 1.5rem;
+}
+
+.outer {
+  border: 2px dashed #e5e5cb7a;
+  width: 400px;
+  min-height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  opacity: 1;
+  /* background-color: cornsilk; */
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
+}
+
+button {
+  padding: 20px;
+  font-size: 2rem;
+  background-color: cornflowerblue;
+  border: none;
+  transition: background-color 0.5s ease scale 0.5s ease;
+}
+
+button:hover {
+  background-color: rgb(34, 72, 145);
+  scale: 0.9;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid rgb(129, 129, 129);
+  border-radius: 10px;
+  transition: border-color 0.3s ease-in;
+}
+
+input:hover {
+  border-color: rgb(255, 55, 55);
+}
+
+.fill-icon {
+  transition: fill 0.2s ease;
+}
+
+.fill-icon:hover {
+  fill: #007bff;
+}
+
+.duck-icon {
+  /* transition: scale 0.4s ease; */
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.duck-icon:hover {
+  scale: 1.1;
+}
+
+#box1 {
+  background-color: rgb(247, 156, 171);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: cornsilk;
+  animation-name: color-switch;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* border-width: 6px; */
+}
+@keyframes color-switch {
+  0% {
+    background-color: purple;
+  }
+  20% {
+    background-color: rgb(0, 81, 128);
+  }
+  40% {
+    background-color: rgb(28, 173, 77);
+  }
+  60% {
+    background-color: rgb(236, 218, 57);
+  }
+  80% {
+    background-color: rgb(223, 135, 21);
+  }
+  100% {
+    background-color: rgb(240, 18, 111);
+  }
+}
+
+/* @keyframes border-switch {
+  0% {
+    border-color: purple;
+  }
+  20% {
+    border-color: rgb(0, 81, 128);
+  }
+  40% {
+    border-color: rgb(28, 173, 77);
+  }
+  60% {
+    border-color: rgb(236, 218, 57);
+  }
+  80% {
+    border-color: rgb(223, 135, 21);
+  }
+  100% {
+    border-color: rgb(240, 18, 111);
+  }
+} */
+
+@keyframes bounce {
+  0% {
+    translate: 0px 0px;
+  }
+
+  50% {
+    translate: 0px -100px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+.spinner {
+  width: 150px;
+  height: 150px;
+  /* background-color: white; */
+  border: 6px solid cornsilk;
+  border-top: 6px solid rgb(240, 18, 111);
+  animation-name: loading;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+}
+
+@keyframes loading {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
