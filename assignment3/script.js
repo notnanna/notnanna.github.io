@@ -1,3 +1,17 @@
+const cards = ["ap", "ba", "ch", "gr", "or", "pi", "st", "wa"];
+
+console.log(cards);
+
+shuffle(cards);
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const random = Math.floor(Math.random() * (i + 1));
+
+    [array[i], array[random]] = [array[random], array[i]];
+  }
+}
+
 // const image = document.createElement(img);
 // image.src = "fruits.jpg/ap.jpg";
 

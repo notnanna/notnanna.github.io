@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #51b7df;
+}
+
+.memory-game {
+  width: 564px;
+  height: 790px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: #0071bc;
+  perspective: 1000px;
+  /* align-items: center; */
+}
+
+.memory-card {
+  width: 130px;
+  height: 200px;
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  /* align-items: center; */
+}
+
+.memory-card:active {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100px;
+  height: 150px;
+  padding: 2px;
+  position: absolute;
+  /* border-radius: 5px; */
+  backface-visibility: hidden;
+  /* background: #51b7df; */
+  /* border: 2px solid deeppink; */
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+h2 {
+  font-size: 3rem;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.reset {
+  padding: 15px 20px;
+  color: blue;
+  background: white;
+  border: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.reset:focus {
+  color: white;
+  background: blue;
+}
+
+/* img {
+  width: 100px;
+} */
