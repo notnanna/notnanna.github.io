@@ -4,18 +4,12 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16 px;
-  font-family: "Poppins", sans-serif;
-  color: black;
-}
-
 body {
   width: 100vh;
   height: 100vh;
   display: flex;
   background: #51b7df;
-  margin: 0;
+  margin: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,36 +17,45 @@ body {
   transform: translate(-50%, -50%);
 }
 
+h2 {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+  font-size: 50px;
+  line-height: 50px; /* Added line-height */
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  white-space: nowrap; /* Ensures all text is in one line */
+  position: absolute;
+  top: 10px; /* Adjust the distance from the top as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .memory-game {
-  width: 564px;
-  height: 790px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 50px; /* Gap between columns */
+  grid-row-gap: 90px; /* Gap between rows */
+  grid-column-gap: 80px;
+  max-width: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
   perspective: 1000px;
-  /* align-items: center; */
 }
 
 .memory-card {
-  height: 5rem;
-  width: 3.125rem;
-  /* padding: 50px; */
-  /* margin: 5px; */
-  padding-left: 2rem;
-  padding-right: 6rem;
-  padding-bottom: 0.625rem;
-  padding-top: 0.625rem;
+  width: calc(25% - 20px); /* Adjusted width to include padding and gap */
+  height: auto;
+  padding: 20px; /* Adjusted padding */
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* flex-wrap: wrap;
-  position: relative; */
-  transform: scale(1);
+  align-items: center;
   transform-style: preserve-3d;
   transition: transform 0.5s;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   border: none;
-  /* align-items: center; */
 }
 
 .memory-card:active {
@@ -63,16 +66,24 @@ body {
 .memory-card.flip {
   transform: rotateY(180deg);
 }
+.memory-card.flip .front-face {
+  transform: rotateY(180deg);
+}
+
+.memory-card.flip .back-face {
+  transform: rotateY(0deg);
+}
 
 .front-face,
 .back-face {
-  /* width: 8rem;
-  height: 12rem; */
-  /* padding: 2rem; */
   position: absolute;
-  /* border-radius: 5px; */
   backface-visibility: hidden;
   border: none;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  width: 280%;
+  height: 280%;
+  object-fit: contain; /* Maintain aspect ratio and fit within the container */
 }
 
 .front-face {
@@ -85,6 +96,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   text-align: center;
+  margin: top;
 }
 
 .reset {
@@ -94,62 +106,102 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: blue;
-  background: white;
+  color: rgb(99, 99, 138);
+  background: lightblue;
   border: none;
   font-size: 1rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 700;
-  /* align-items: flex-end; */
-  /* justify-content: space-around; */
+  border-radius: 20px; /* Adjust border-radius as needed */
+  position: absolute;
+  bottom: 50%; /* Adjust bottom spacing */
+  left: -25%; /* Adjust left spacing */
 }
 
 .reset:focus {
   color: white;
-  background: blue;
+  background: #0071bc;
 }
 
 .wrapper {
   box-sizing: border-box;
-  width: 40rem;
+  width: 35rem;
   height: 35rem;
-  padding: 2.5rem 3rem;
+  padding: 4rem; /* Increased padding */
   background-color: #0071bc;
   position: absolute;
-  transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 0.6rem;
   box-shadow: 0 0.09rem 2.8rem rgba(86, 66, 0, 0.2);
-}
-.game-container {
-  position: relative;
-  width: 100%;
-  display: grid;
-}
-
-/* .button {
-  position: relative;
-  left: 50%;
-  margin-top: 50%;
+  display: flex;
   justify-content: center;
-} */
+  align-items: center;
+}
 
-/* .container {
-  background: #0071bc;
-} */
-
-/* .container {
-  margin: 0;
+#grape-kid {
+  height: 120px;
+  width: 80px;
+  margin-top: 2%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  /* align-items: center; */
+  right: 100%;
+  transform: translateX(-50%);
+}
 
-/* img {
-  width: 100px;
-} */
+#orange-kid {
+  height: 125px;
+  width: 80px;
+  margin-top: 40%;
+  position: absolute;
+  left: 142%;
+  transform: translateX(-50%);
+}
+
+#pineapple-kid {
+  height: 125px;
+  width: 80px;
+  margin-top: 10%;
+  position: absolute;
+  left: 100%;
+  transform: translateX(-50%);
+}
+
+#pink-kid {
+  height: 120px;
+  width: 70px;
+  margin-top: 75%;
+  position: absolute;
+  right: 100%;
+  transform: translateX(-50%);
+}
+
+#strawberry-kid {
+  height: 125px;
+  width: 75px;
+  margin-top: 70%;
+  position: absolute;
+  left: 100%;
+  transform: translateX(-50%);
+}
+
+#watermelon-kid {
+  height: 120px;
+  width: 90px;
+  margin-top: 40%;
+  position: absolute;
+  right: 130%;
+  transform: translateX(-50%);
+}
+
+#circles1 {
+  left: auto;
+  transform: translateX(-50%);
+}
+
+#circles2 {
+  right: auto;
+  transform: translateX(-50%);
+}
