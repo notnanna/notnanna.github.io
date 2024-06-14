@@ -92,7 +92,7 @@ h2 {
 
 h2 {
   font-size: 50px;
-  color: black;
+  color: rgb(61, 61, 114);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   text-align: center;
@@ -106,7 +106,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(99, 99, 138);
+  color: rgb(29, 29, 126);
   background: lightblue;
   border: none;
   font-size: 1rem;
@@ -123,6 +123,7 @@ h2 {
 .reset:focus {
   color: white;
   background: #0071bc;
+  transition: transform 0.5s;
 }
 
 .wrapper {
@@ -204,4 +205,35 @@ h2 {
 #circles2 {
   right: auto;
   transform: translateX(-50%);
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.reset.active {
+  background-color: rgb(1, 0, 87);
+  color: white;
+}
+
+#victory-gif {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+#victory-gif img {
+  /* Adjust the styling of the trophy image */
+  max-width: 100%;
+  max-height: 100%;
 }
