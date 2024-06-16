@@ -11,13 +11,36 @@
       href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
       rel="stylesheet"
     />
+    <!-- I chose to use this font because I wanted something that
+    was child friendly - not doing too much, but just enough. I took inspiration
+    from child gaming sites such as 'Cool Maths Games' and 'Games 4 Girls' -
+    they had quite a lot of big, bolded texts, as well as lots of visuals (such
+    as advertisements, other games etc), but I chose to only work withing the
+    scope of what I know and how to execute certain visual and functional
+    choices, which meant that I had to not use so many visuals.-->
+
+    <!-- I also chose to use one main font because I knew that it would be very distracting having too many different options ~ considering that children don't have the best attention span, I wanted to heavily focus on the game itself, rather than several other visuals that would have no benifit/function to my site. The one I ended up going with was my favourite of a few options, because it was large, sort of "blobky" and it gave me the option to round it off, just so that the text wasn't too harsh. I felt that having a sort of bubbly writing font helps ease my audiencve of children into the site and also matches that fun of the game!-->
   </head>
   <body>
     <img src="circles.png" id="circles1" />
     <img src="circles.png" id="circles2" />
+
+    <!-- once I got towards the ending of creating this game, I went back and looked at the visuals of my site, I was finally happy with the functions and everything, but I realised that it was pretty bland (aside from the pretty flash cards). So, I decided to do a little bit of editing and find images to fit into my background and make it look interesting! I then went on to look for images I would put in my background. Since my game revolves around learning fruits I decided to look for cute cartoon images of fruit, and I finally decided on these cute little children dressed up as fruits. I thought that it was especially fitting as the game was directed towards little children.-->
+
+    <!-- The images of the children as fruits came in one sheet, so I then had to go in manually and crop each and every one of them, then use a background remover to turn them into transparent pngs. Once that was done my next issue was figuring out the sizing of the images and the orientation of them (around the other visuals I had in my site). It did take me almost an hour and a half tring to figure out how to move each one of them one by one, without distrupting the positioning of the other visual elememts, but once I was done I thought that the way in which I seperated them across the screen allowed them all to be seen equally, and fit with the overall harmony of the page! -->
+
+    <!-- I did the little fruit mascots first, before the colourful background, and because I felt that they looked pretty bland alone, I chose to add in that background. Initailly wanted confetti, but because I felt that I wanted to keep a poppy/confetti element once the player has won the game, I decided that finding something that was resembled confetti, but didn't relay the same message would fit the visuals I wanted -->
+
     <h2>Fruit Memory Game</h2>
+
+    <!-- I chose this name because it's very simple and tells the player exactly what it is. I thought about simplifying it to maybe something like "fruit game" or "memory game", but I thought that it wouldn't be the best sort of desctiption, especially for a child. I wanted to be as descriptive as I possibly could, but still simple.-->
+
     <div class="wrapper">
+      <!-- I created this "wrapper" because, like I mentioned in my presentation, I wanted the main framework of the visuals to take inspiration from Google's solitaire (or any of their other web based games), so creating this wrapper allowed for me to have a visual container and a background for my cards to be set onto (kind of resembling a playing table) -->
+
       <div class="memory-game">
+        <!-- In preparation for this assignment, the first thing I actually did was create the cards. I went onto canva and used a template that had the shape of the vcards that I wanted, and then sourced the images of the fruits, changed the colours and texts on the cards and voila! the cards were created. ~ I also used a free pattern from canva to create the backside of the cards. I thought that going with a theme as simple as fruits wouold be a fun and cure ide for children as it was easy for them. I took inspiration for this from the feedback I was given after my presentation. I could've sone something that wouldn't really teach anyone anything, but I thought that choosing healthy foods would be a great idea! -->
+
         <div class="memory-card" data-framework="apple">
           <img class="front-face" src="ap.png" alt="apple" />
           <img class="back-face" src="back.png" alt="back" />
@@ -92,13 +115,22 @@
     <img src="st.kid.png" alt="strawberry kid" id="strawberry-kid" />
     <img src="wa.kid.png" alt="watermelon kid" id="watermelon-kid" />
     <br />
-    <!-- <button class="reset" onclick="window.location.reload();">
-      Reset Game
-    </button> -->
     <button class="reset">Reset Game</button>
+
+    <!-- I though that having a button that would reset the game would be a simple use of adding another visual and interative aspect to my game. i considered having elements such as a timer or even a score/tally, but initially because they were a little to difficult for me at the time I wanted to create them I chose to leave them out. Biut looking back at my game now that I have come towards the end, I thing that it was best that I left it as simple as I did, because I understand that it might distrupt the visual harmony of everything, and the children the game is targeted towards wouldn't necessarily understand the purpose of it -->
+
+    <!-- I also thought that the reset button would be a good idea just incase someone wanted to restart the game - in essence all the reset button is doing it refressing the page, but because the player isn't aware of that, it just looks like the game is restarting. It is a very simple, yet important and fruitful function that I felt was necessary to add to my game -->
+
     <div id="victory-gif" class="hidden">
       <img src="troph.gif" alt="Victory Troph" />
     </div>
+
+    <!-- Going back to the feedback from my in class presentation, I chose to add in a sort of victory section at the end, so that way it can enforce a positive experience for the children as rewarding them (or anyone) when they do something good will encourage them to keep going and keep them motivated! -->
+
+    <!-- When thinking about this portion of the game, I had to think about what sort of formatting I wanted for the trophy. I ended up choosing a gif, overa  video, just because I was worried the automatic play/pause and durtion icons that would pop up if I were to add in a video. So I sourced a gif of a trophy that had a transparent background and put it into my game. It was a bit difficult to figure out how to get it into position and to appear when I wanted to, but after watching countless videos and reating several articles with tutorials, I was able to use the 'hidden' function as I did with some other visuals in css to hide it and play when I wanted to :) -->
+
+    <!-- I also found that adding some sort of sound that resembled victory (sonically) would overal add to the positive element when einning. I wanted something similar to a sort of trumpet victory sound, but I wasn't able to find exactly what I wanted, so I ended up going with the generic track of children shouting "yay" -->
+
     <script src="script.js"></script>
     <footer>
       <a

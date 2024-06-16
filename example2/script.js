@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (this === firstCard) return;
 
     this.classList.add("flip");
-    playClickSound(); // Play sound when card is flipped
+    playClickSound(); // Play sound when card is flipped - I added this sound because I felt that the game was dull without any noises, so I though a simple clicking sound would simply elevate it
 
     if (!hasFlippedCard) {
       // First click
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     secondCard.removeEventListener("click", flipCard);
 
     if (document.querySelectorAll(".flip").length === cards.length) {
-      // All cards are flipped
+      // All cards are flipped - the gif will play once the player has won the game! - yay >.<
       playVictoryGif();
     }
 
@@ -66,18 +66,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function playVictoryGif() {
-    // Play the "yay.wav" audio file
+    // Play the "yay.wav" audio file - positive connotations
     const yaySound = new Audio("yay.wav");
     yaySound.play();
 
-    // Display the trophy GIF
+    // Display the trophy GIF - victory trophy with "yay" sound together
     victoryGif.style.display = "block";
   }
 
   function resetGame() {
     playClickSound(); // Play sound when reset button is clicked
     setTimeout(() => {
-      window.location.reload(); // Reload the page immediately after 2 seconds
+      window.location.reload(); // Reload the page immediately after 2 seconds - gives it a more smooth look rather than an immediate refresh - plus it allows for the click sound to fully play before reloading the page!
     }, 2000);
   }
 

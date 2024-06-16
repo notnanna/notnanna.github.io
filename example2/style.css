@@ -9,6 +9,7 @@ body {
   height: 100vh;
   display: flex;
   background: #51b7df;
+  /* I chose this colour, origiannly as the base because that is what I had in my framework for my presentation, but I ended up keeping it becaus ethe colour didn't conflict with the colours of the fruits/cards/background confetti/trophy - it was a logical choice */
   margin: auto;
   position: absolute;
   top: 50%;
@@ -23,12 +24,12 @@ h2 {
   font-style: normal;
   text-align: center;
   font-size: 50px;
-  line-height: 50px; /* Added line-height */
+  line-height: 50px;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  white-space: nowrap; /* Ensures all text is in one line */
+  white-space: nowrap; /* this helped to make sure that all text was in one line - becaus ethere were issues at first with each word going underneath each other :'( */
   position: absolute;
-  top: 10px; /* Adjust the distance from the top as needed */
+  top: 10px; /* helped me give space between the text and the top of the screen */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -36,6 +37,7 @@ h2 {
 .memory-game {
   display: grid;
   grid-template-columns: repeat(4, auto);
+  /* adding in the grid display and specifying howmany rows and columns I wanted allowed for me to not stress as much about how I wanted to structure the cards. before adding in these, I was looking at possibly removing several vcards, which I felt would take away from my game rather than add */
   grid-gap: 50px; /* Gap between columns */
   grid-row-gap: 90px; /* Gap between rows */
   grid-column-gap: 80px;
@@ -47,13 +49,14 @@ h2 {
 }
 
 .memory-card {
-  width: calc(25% - 20px); /* Adjusted width to include padding and gap */
+  width: calc(25% - 20px);
   height: auto;
-  padding: 20px; /* Adjusted padding */
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   transform-style: preserve-3d;
+  /* making use of the preserve 3d function allowed for me to flip my cards, but go one step further and have them immitate what real cards would look like turning around */
   transition: transform 0.5s;
   border: none;
 }
@@ -61,6 +64,7 @@ h2 {
 .memory-card:active {
   transform: scale(0.9);
   transition: transform 0.2s;
+  /* I decided to add these factors in, just to have simple functions that would add to my player's over all experience in the game ~ something little, but powerful when noticed! */
 }
 
 .memory-card.flip {
@@ -83,7 +87,7 @@ h2 {
   transform-origin: center;
   width: 280%;
   height: 280%;
-  object-fit: contain; /* Maintain aspect ratio and fit within the container */
+  object-fit: contain;
 }
 
 .front-face {
@@ -93,6 +97,7 @@ h2 {
 h2 {
   font-size: 50px;
   color: rgb(61, 61, 114);
+  /* after going through many colours, amd almost stopping at black, just because it was easy (but I wasn't 100% satisfied), I found that this colour worked perfectly, and blended with the colour scheme of the game!*/
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   text-align: center;
@@ -114,10 +119,10 @@ h2 {
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 700;
-  border-radius: 20px; /* Adjust border-radius as needed */
+  border-radius: 20px;
   position: absolute;
-  bottom: 50%; /* Adjust bottom spacing */
-  left: -25%; /* Adjust left spacing */
+  bottom: 50%;
+  left: -25%;
 }
 
 .reset:focus {
@@ -130,7 +135,7 @@ h2 {
   box-sizing: border-box;
   width: 35rem;
   height: 35rem;
-  padding: 4rem; /* Increased padding */
+  padding: 4rem;
   background-color: #0071bc;
   position: absolute;
   left: 50%;
@@ -224,16 +229,15 @@ footer {
 }
 
 #victory-gif {
-  display: none; /* Initially hidden */
+  display: none; /* hidden in the beginning */
   position: fixed;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 9999; /* Ensure it's on top of other elements */
+  z-index: 9999; /* this made sure that the gif played on top of other elements */
 }
 
 #victory-gif img {
-  /* Adjust the styling of the trophy image */
   max-width: 100%;
   max-height: 100%;
 }
